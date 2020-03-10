@@ -8,6 +8,8 @@ services:
     - 8080:8080
     environment:
       SPRING_DATA_MONGODB_HOST: mongo
+    depends_on:
+      - mongo
     networks:
       - secretmsg
 
@@ -28,6 +30,8 @@ services:
   mongo-express:
     image: mongo-express
     restart: always
+    depends_on:
+      - mongo
     ports:
       - 8081:8081
     environment:
