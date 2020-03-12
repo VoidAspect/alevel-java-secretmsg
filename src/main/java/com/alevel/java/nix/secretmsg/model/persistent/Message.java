@@ -17,11 +17,6 @@ public final class Message {
     @Field
     private final String text;
 
-    public Message(String text) {
-        this.id = UUID.randomUUID();
-        this.text = text;
-    }
-
     @PersistenceConstructor
     public Message(UUID id, String text) {
         this.id = id;

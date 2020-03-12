@@ -8,6 +8,7 @@ services:
     - 8080:8080
     environment:
       SPRING_DATA_MONGODB_HOST: mongo
+      SECRETMSG_ENCRYPTION_PASSWORD: 0:cQ-r3FP3&#Vy+e
     depends_on:
       - mongo
     networks:

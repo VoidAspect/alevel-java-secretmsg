@@ -1,0 +1,9 @@
+{
+  "properties": [
+    {
+      "name": "secretmsg.encryption.password",
+      "type": "java.lang.String",
+      "description": "Application-wide encryption password."
+    }
+  ]
+}
